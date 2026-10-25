@@ -1,0 +1,66 @@
+
+# Compiled Java files
+*.class
+*.jar
+*.war
+*.ear
+
+# Build output
+target/
+build/
+out/
+
+# Gradle
+.gradle/
+
+# Maven wrapper settings (keep mvnw and .mvn/wrapper files tracked)
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Spring Boot configuration containing secrets
+application-local.properties
+application-local.yml
+application-local.yaml
+application-dev.properties
+application-dev.yml
+application-dev.yaml
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Test reports
+surefire-reports/
+failsafe-reports/
+
+# Coverage reports
+coverage/
+jacoco/
