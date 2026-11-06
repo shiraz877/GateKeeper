@@ -1,7 +1,9 @@
 package com.shiraz.gatekeeper.analytics.controller;
 
+import com.shiraz.gatekeeper.analytics.dto.responseDto.HealthResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,6 +19,11 @@ public class HealthController {
 
     }
 
-    public ResponseEntity<>
+    @GetMapping
+    public ResponseEntity<HealthResponse> health(){
+        return ResponseEntity.ok(
+                new HealthResponse(serviceName,serviceDescription,"UP")
+        );
+    }
 
 }
